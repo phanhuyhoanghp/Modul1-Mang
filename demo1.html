@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let ......
+    function findMinValue(arr,size){
+        let min=arr[0];
+        for(i=1;i<size;i++){
+            if(min>arr[i]){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+    document.write("Giá trị nhỏ nhất:"+findMinValue(arr,size))
+</script>
+</body>
+</html>

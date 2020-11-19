@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr=new Array();
+    // let size=+prompt("Nhap so luong phan tu: ");
+
+    let arr=new Array(9,5,2,19,6);
+    size=arr.length;
+    //inputArray(arr,size);
+    displayArray(arr,size);
+    // let xIndex=findValue(arr,size,19);
+    // if(xIndex==-1){
+    //     alert("Khong tim thay");
+    // }else{
+    //     alert("Tim thay o vi tri thu "+xIndex);
+    // }
+    document.write("Gia tri nho nhat la: "+ findMinValue(arr,size));
+    document.write("Gia tri nho nhat la: "+ findMaxValue(arr,size));
+
+    function inputArray(arr,size) {
+        for(let i=0;i<size;i++){
+            arr[i]=+prompt("Nhap phan tu thu "+i);
+        }
+    }
+    function displayArray(arr,size) {
+        for(let i=0;i<size;i++){
+            document.write(arr[i]+" ");
+        }
+    }
+    function findFirstValue(arr,size,xNumber){
+        for(let i=0;i<size;i++){
+            if(arr[i]===xNumber){
+                return i;
+            }
+        }
+        return -1;
+    }
+    function findMinValue(arr,size) {
+        let min=arr[0];
+        for(i=1;i<size;i++){
+            if(min>arr[i]){
+                min=arr[i];
+            }
+        }
+        return min;
+    }
+    function findMaxValue(arr,size) {
+        let max=arr[0];
+        for(i=1;i<size;i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+        return max;
+
+    }
+
+
+    // let arr = new Array ();
+    // let size=+prompt("Nhap so lượng phần tử: ");
+    // inputArray(arr,size);
+    // displayArray(arr,size);
+    //
+    // function inputArray(arr,size){
+    //     for(i=0;i<size;i++){
+    //         arr[i]=+prompt("Nhập phần tử thứ"+i);
+    //     }
+    // }
+    // function displayArray(arr,size){
+    //     for (i=0;i<size;i++){
+    //         document.write(arr[i]+"")
+    //     }
+    // }
+
+</script>
+</body>
+</html>

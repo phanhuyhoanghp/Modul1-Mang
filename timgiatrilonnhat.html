@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    let numbers= new Array(4,-8,6,85,-6,4,7,15,24,85,9,12);
+    let max=numbers[0];
+    let index=0;
+    for (let i=1;i<numbers.length;i++){
+        if(numbers[i]>max){
+            max=numbers[i];
+            index=i;
+        }
+    }
+    alert(max+"là gtri max tại vị trí "+index)
+</script>
+</body>
+</html>

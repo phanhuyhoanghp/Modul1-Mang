@@ -6,17 +6,104 @@
 </head>
 <body>
 <script>
-    // let ......
-    function findMinValue(arr,size){
-        let min=arr[0];
-        for(i=1;i<size;i++){
-            if(min>arr[i]){
-                min=arr[i];
-            }
+    // let arr=new Array();
+    // let size=+prompt("Nhap so luong phan tu: ");
+
+    let arr=new Array(9,5,2,19,6);
+    size=arr.length;
+    //inputArray(arr,size);
+    displayArray(arr);
+    //let xValue=+prompt("Nhap so can chen: ");
+    let xIndex;
+    // do{
+    //     xIndex=+prompt("Nhap vi tri can chen: ");
+    // }while(isNaN(xIndex)||xIndex<0||xIndex>size);
+    //
+    //
+    //
+    // insertValue(arr,xIndex,xValue);
+    // displayArray(arr);
+    do{
+        xIndex=+prompt("Nhap vi tri can xoa: ");
+    }while(isNaN(xIndex)||xIndex<0||xIndex>=size);
+
+
+
+    deleteValue(arr,xIndex);
+    displayArray(arr);
+
+
+    // let xIndex=findValue(arr,size,19);
+    // if(xIndex==-1){
+    //     alert("Khong tim thay");
+    // }else{
+    //     alert("Tim thay o vi tri thu "+xIndex);
+    // }
+    // document.write("Gia tri nho nhat la: "+ findMinValue(arr));
+    // document.write("Gia tri nho nhat la: "+ findMaxValue(arr));
+
+    function deleteValue(arr,index) {
+        for(let i=index;i<size-1;i++){
+            arr[i]=arr[i+1];
         }
-        return min;
+        size--;
+
     }
-    document.write("Giá trị nhỏ nhất:"+findMinValue(arr,size))
+
+
+    function insertValue(arr,index,xValue){
+        for(let i=size-1;i>=index;i--){
+            arr[i+1]=arr[i];
+        }
+        arr[index]=xValue;
+        size++;
+
+    }
+
+
+
+
+    // function inputArray(arr) {
+    //     for(let i=0;i<size;i++){
+    //         arr[i]=+prompt("Nhap phan tu thu "+i);
+    //     }
+    // }
+    function displayArray(arr) {
+
+        for(let i=0;i<size;i++){
+            document.write(arr[i]+" ");
+        }
+        document.write("<br>");
+    }
+    // function findFirstValue(arr,xNumber){
+    //     for(let i=0;i<size;i++){
+    //         if(arr[i]===xNumber){
+    //             return i;
+    //         }
+    //     }
+    //     return -1;
+    // }
+    // function findMinValue(arr) {
+    //     let min=arr[0];
+    //     for(i=1;i<size;i++){
+    //         if(min>arr[i]){
+    //             min=arr[i];
+    //         }
+    //     }
+    //     return min;
+    //
+    // }
+    // function findMaxValue(arr) {
+    //     let max=arr[0];
+    //     for(i=1;i<size;i++){
+    //         if(max<arr[i]){
+    //             max=arr[i];
+    //         }
+    //     }
+    //     return max;
+    //
+    // }
+
 </script>
 </body>
 </html>

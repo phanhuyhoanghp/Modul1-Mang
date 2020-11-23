@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo từ điển Anh - Việt</title>
+</head>
+<body>
+<input type="text" id="input">
+<button type="button" onclick="translateWord()">Translate</button>
+<script>
+    let arr_en=['one','two','three','four','five'];
+    let arr_vi=['một','hai','ba','bốn','năm'];
+    function translateWord()
+    {
+        let english_word=document.getElementById('input').value;
+        let index=arr_en.indexOf(english_word);
+        if(index != -1)
+        {
+            alert(english_word+' dich sang tieng Viet : '+arr_vi[index]);
+        }
+        else alert('khong co tu can tim');//index===-1
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<input type="text" id="rows">
+<input type="text" id="cols" onchange="initCaro()"><br><br>
+<input type="text" id="pos_row">
+<input type="text" id="pos_col">
+<button type="button" onclick="changeCaro()">Change</button>
+<p id="caro"></p>
+<script>
+    let arr=[],x=0,y=0;
+    /*init caro by x and y*/
+    function initCaro()
+    {
+        x=+document.getElementById('rows').value;
+        y=+document.getElementById('cols').value;
+        for(let i=0;i<x;i++)
+        {
+            let arr_=[];
+            for(let j=0;j<y;j++)
+            {
+                arr_.push(0);
+            }
+            arr.push(arr_);
+        }
+        printCaro();
+    }
+    /*print after change*/
+    function printCaro()
+    {
+        let output='';
+        for(let i=0;i<x;i++)
+        {
+            for(let j=0;j<y;j++)
+            {
+                output+=arr[i][j]+'&nbsp;&nbsp;';
+            }
+            output+='<br>';
+        }
+        document.getElementById('caro').innerHTML=output;
+    }
+    /*change*/
+    function changeCaro()
+    {
+        let row=+document.getElementById('pos_row').value;
+        let col=+document.getElementById('pos_col').value;
+        arr[row][col]=(arr[row][col]==1? 0:1);
+        printCaro();
+    }
+</script>
+</body>
+</html>

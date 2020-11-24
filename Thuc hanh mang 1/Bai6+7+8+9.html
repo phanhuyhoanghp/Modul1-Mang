@@ -8,17 +8,40 @@
 <script>
 let a=new Array(2,3,5,7,12,-4,22,9,21,-12);
 let b = new Array(3,2,65,3,0,-3,-5,32,4,2);
+let c= new Array(20);
+c = a.concat(b);
+document.write('Mảng a: '+a);
+document.write('<br> Mảng b: '+b);
+document.write('<br>Mảng c được nối a với b'+c);
+// console.log(a);
+// console.log(b);
+function sortingArray(arr){
+   return  arr.sort();
+}
+console.log(sortingArray(b));
 function checkNum1(n,arr){
     for (i=0;i<arr.length;i++){
         if (n==arr[i])
-            return true
+            return true;
     }
     return false;
 }
-let number=+prompt('Nhập vào số nguyên V:','')
-if (checkNum1(number,a)) alert('Số nguyên V: '+number+ ' thuộc mảng a')
-else alert('Số nguyên V: '+number+ 'không thuộc mảng a')
-
+function deleteNum1(n,arr) {
+    for (i=0;i<arr.length;i++)
+        if (checkNum1(n,arr)){
+            arr.splice(i,1);
+            return true;
+        }
+    return false;
+}
+let number=+prompt('Nhập vào số nguyên V:','');
+if (checkNum1(number,a)) document.write('<br>'+'Số nguyên V: '+number+ ' thuộc mảng a');
+else alert('Số nguyên V: '+number+ 'không thuộc mảng a');
+if (deleteNum1(number,a)) {
+    document.write('<br>'+'Mảng a sau khi được xóa số nguyên V: '+a);
+    a.push(0)
+    document.write('<br>'+'Mảng a sau khi được chèn số 0 vào phần tử cuối:' +a)
+}
 </script>
 </body>
 </html>

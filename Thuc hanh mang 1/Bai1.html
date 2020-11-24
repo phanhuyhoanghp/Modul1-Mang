@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hiển thị số nguyên lớn hơn 10</title>
+    <title>Hiển thị số nguyên lớn hơn 10 và giá trị lớn nhất</title>
 </head>
 <body>
 <script>
@@ -13,7 +13,16 @@
             count++;
         }
     }
-    alert('Có'+count+'số nguyên lớn hơn bằng 10')
+    document.write('Có '+count+' số nguyên lớn hơn bằng 10')
+    let index=0;
+    let max = arr[0]
+    for (let i=1;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i];
+            index=i;
+        }
+    }
+    document.write('<br>'+'Giá trị lớn nhất trong mảng: '+max+ ' tại vị trí: '+ index)
 </script>
 </body>
 </html>

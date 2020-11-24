@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let arr = new Array(32,2,4,5,6,7,8,44,12,5);
+    let arr = new Array(32,2,4,-5,6,7,8,-44,12,5);
     let count = 0;
     document.write('Mảng được nhập vào: '+arr)
     for (i=0;i<arr.length;i++){
@@ -25,12 +25,15 @@
     }
     document.write('<br>'+'Giá trị lớn nhất trong mảng: '+max+ ' tại vị trí: '+ index);
     let sum=0;
+    let count1=0;
     let avarage;
     for (let i=0;i<arr.length;i++){
         sum+=arr[i];
         avarage=sum/(i+1);
+        if (arr[i]<0) count1++;
     }
-    document.write('<br>'+'Giá trị trung bình trong mảng: '+avarage);
+
+    document.write('<br>'+'Giá trị trung bình trong mảng: '+avarage+'<br>'+'Có '+count+' số nguyên âm trong mảng');
     let first=0;
     let last=arr.length-1;
     while(first<last){

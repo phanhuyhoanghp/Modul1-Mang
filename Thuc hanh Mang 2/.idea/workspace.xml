@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb03e5ce-0e72-43c8-87b3-c3d8066af091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai1-Hienthimang2chieu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai2-Daonguocmang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai3-Demsotu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Thuc hanh mang 1/Bai6+7+8+9.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Thuc hanh mang 1/Bai6+7+8+9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Su dung ham co san cua mang/Bai 1.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +62,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606270529907</updated>
-      <workItem from="1606270530929" duration="2171000" />
+      <workItem from="1606270530929" duration="8769000" />
+      <workItem from="1606290944256" duration="3000000" />
     </task>
     <servers />
   </component>
@@ -78,11 +80,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606271256882">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606286550720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606271256882" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606286550720" />
   </component>
 </project>

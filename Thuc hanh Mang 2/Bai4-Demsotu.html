@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm </title>
+</head>
+<body>
+<script>
+    let a = ' Dem so             tu trong chuoi ';
+    let count = 1;
+    a=a.trim();
+    for (let i = 0; i < a.length; i++) {
+        if (a[i]==' ' && a[i+1]!==' ') count++;
+    }
+document.write("Số từ trong chuỗi a: "+count)
+
+    // while(a.charAt(0)==' ')
+    // {
+    //     a=a.slice(1,a.length);
+    // }
+    // console.log(a);
+
+    // for (let i = 0; i < a.length; i++) {
+    //     if (a[i]==' '&&a[i+1]==' '){
+    //         a.slice(i+1,1);
+    //     }
+    // }
+
+    // let arr='';
+    // for (let i = 0; i < a.length; i++) {
+    //     if(a[i]==' ' && a[i-1]==' ')
+    //     {
+    //
+    //     }
+    //     else
+    //     {
+    //         arr+=a[i]
+    //     }
+    // }
+    // a=arr;
+    // console.log(a);
+</script>
+</body>
+</html>

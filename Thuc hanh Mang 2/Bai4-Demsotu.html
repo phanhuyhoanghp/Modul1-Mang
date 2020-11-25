@@ -8,11 +8,11 @@
 <script>
     let a = ' Dem so             tu trong chuoi ';
     let count = 1;
-    a=a.trim();
+    a=a.trim(); // Xóa khoảng trắng ở đầu và cuối trong chuỗi
     for (let i = 0; i < a.length; i++) {
         if (a[i]==' ' && a[i+1]!==' ') count++;
     }
-document.write("Số từ trong chuỗi a: "+count)
+    document.write("Số từ trong chuỗi a: "+count)
 
     // while(a.charAt(0)==' ')
     // {
